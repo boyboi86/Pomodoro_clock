@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+					<meta name="viewport" content="width=device-width, initialscale=1">
+						<title>Twitch</title>
+						<!-- Bootstrap -->
+						 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+						      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
+						      <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+                                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                                <script src="script.js" type="text/javaScript"></script>
+
+						<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+						<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+						<!--[if lt IE 9]>
+						<script src="https://oss.maxcdn.com/libs/html5shiv/ 3.7.0/html5shiv.js"></script>
+						<script src="https://oss.maxcdn.com/libs/respond.js/ 1.4.2/respond.min.js"></script>
+						<![endif]-->
+
+					</head>
+					<body>
+						<div class="container-fluid">
+				  <h1 class="text-center">Pomodoro Cock</h1>
+				  <div id="setters" class="text-center">
+				    <div id="break-setter">
+				      <p>Break Length</p>
+				      <button id="break-minus">-</button>&nbsp;&nbsp;<span id="break-length">5</span>&nbsp;&nbsp;<button id="break-plus">+</button>
+				    </div>
+				    <div id="session-setter">
+				      <p>Session Length</p>
+				      <button id="session-minus">-</button>&nbsp;&nbsp;<span id="session-length">25</span>&nbsp;&nbsp;<button id="session-plus">+</button>
+				    </div>
+				  </div>
+				  <div id="clock" class="text-center" onclick="toggleTimer();">
+				    <span id="session">Session</span>
+				    <span id="time-left">25:00</span>
+				    <span id="filler"></span>
+				  </div>
+				  <div id="reset">
+				    <button id="reset-button" class="btn btn-warning btn-lg btn-block" onclick="reset();">Reset</button>
+				  </div>
+				</div>
+	</body>
+</html>
